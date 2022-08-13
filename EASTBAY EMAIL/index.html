@@ -7,7 +7,7 @@
     <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
     <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
 
     <!-- CSS Reset : BEGIN -->
     <style>
@@ -111,7 +111,6 @@ img.g-img + div {
     }
 }
 
-
     </style>
 
     <!-- CSS Reset : END -->
@@ -120,13 +119,13 @@ img.g-img + div {
     <style>
 
 	    .primary{
-	background: #f1c638;
+	background: #f34949;
 }
 .bg_white{
 	background: #ffffff;
 }
 .bg_light{
-	background: #fafafa;
+	background: #f7fafa;
 }
 .bg_black{
 	background: #000000;
@@ -140,13 +139,13 @@ img.g-img + div {
 
 /*BUTTON*/
 .btn{
-	padding: 5px 15px;
+	padding: 3px 10px;
 	display: inline-block;
 }
 .btn.btn-primary{
 	border-radius: 5px;
-	background: #f1c638;
-	color: #000;
+	background: #0b88ee;
+	color: #ffffff;
 }
 .btn.btn-white{
 	border-radius: 5px;
@@ -159,20 +158,27 @@ img.g-img + div {
 	border: 1px solid #fff;
 	color: #fff;
 }
-.btn.btn-black{
-	border-radius: 5px;
-	background: #000;
-	color: #fff;
+.btn.btn-black-outline{
+	border-radius: 0px;
+	background: transparent;
+	border: 2px solid #000;
+	color: #000;
+	font-weight: 700;
+}
+.btn-custom{
+	color: rgba(0,0,0,.3);
+	text-decoration: underline;
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	color: #000000;
 	margin-top: 0;
+	font-weight: 400;
 }
 
 body{
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.8;
@@ -180,7 +186,7 @@ body{
 }
 
 a{
-	color: #f1c638;
+	color: #8d0606;
 }
 
 table{
@@ -188,27 +194,13 @@ table{
 /*LOGO*/
 
 .logo h1{
-	margin: 0;
+	margin: 0 0 20px 0;
 }
 .logo h1 a{
-	color: #000000;
-	font-size: 20px;
-	font-weight: 700;
-	font-family: 'Nunito Sans', sans-serif;
-}
-
-.navigation{
-	padding: 0;
-}
-.navigation li{
-	list-style: none;
-	display: inline-block;;
-	margin-left: 5px;
-	font-size: 13px;
-	font-weight: 500;
-}
-.navigation li a{
-	color: rgba(0,0,0,.4);
+	color: #000;
+	font-size: 24px;
+	font-weight: 300;
+	font-family: 'Work Sans', sans-serif;
 }
 
 /*HERO*/
@@ -216,290 +208,71 @@ table{
 	position: relative;
 	z-index: 0;
 }
-.hero .overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: '';
-	width: 100%;
-	background: #000000;
-	z-index: -1;
-	opacity: .3;
-}
-.hero .icon{
-}
-.hero .icon a{
-	display: block;
-	width: 60px;
-	margin: 0 auto;
-}
+
 .hero .text{
-	color: rgba(0,0,0,.8);
+	color: rgba(0,0,0,.3);
 }
 .hero .text h2{
 	color: #000;
-	font-size: 32px;
-	margin-bottom: 0;
+	font-size: 34px;
+	margin-bottom: 15px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+.hero .text h3{
+	font-size: 24px;
 	font-weight: 200;
-	line-height: 1.4;
+}
+.hero .text h2 span{
+	font-weight: 600;
+	color: #000;
 }
 
 
-/*HEADING SECTION*/
-.heading-section{
-}
-.heading-section h2{
-	color: #000000;
-	font-size: 28px;
-	margin-top: 0;
-	line-height: 1.4;
-	font-weight: 400;
-}
-.heading-section .subheading{
-	margin-bottom: 20px !important;
-	display: inline-block;
-	font-size: 13px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: rgba(0,0,0,.4);
+/*PRODUCT*/
+.product-entry{
+	display: block;
 	position: relative;
+	float: left;
+	padding-top: 20px;
 }
-.heading-section .subheading::after{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -10px;
-	content: '';
-	width: 100%;
-	height: 2px;
-	background: #f1c638;
-	margin: 0 auto;
+.product-entry .text{
+	width: calc(100% - 125px);
+	padding-left: 20px;
 }
-
-.heading-section-white{
-	color: rgba(255,255,255,.8);
-}
-.heading-section-white h2{
-	font-family: 
-	line-height: 1;
+.product-entry .text h3{
+	margin-bottom: 0;
 	padding-bottom: 0;
 }
-.heading-section-white h2{
-	color: #ffffff;
-}
-.heading-section-white .subheading{
-	margin-bottom: 0;
-	display: inline-block;
-	font-size: 13px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: rgba(255,255,255,.4);
-}
-
-
-.icon{
-	text-align: center;
-}
-.icon img{
-}
-
-
-/*SERVICES*/
-.services{
-}
-.text-services{
-	padding: 10px 10px 0; 
-	text-align: center;
-}
-.text-services h3{
-	font-size: 18px;
-	font-weight: 400;
-}
-
-.services-list{
-	padding: 0;
-	margin: 0 0 20px 0;
-	width: 100%;
-	float: left;
-}
-
-.services-list img{
-	float: left;
-}
-.services-list .text{
-	width: calc(100% - 60px);
-	float: right;
-}
-.services-list h3{
-	margin-top: 0;
-	margin-bottom: 0;
-}
-.services-list p{
-	margin: 0;
-}
-
-/*PROJECT*/
-.project-entry{
-	position: relative;
-}
-.text-project{
-	padding-top: 10px;
-	position: absolute;
-	bottom: 10px;
-	left: 0;
-	right: 0;
-}
-.text-project h3{
-	margin-bottom: 0;
-	font-size: 16px;
-	font-weight: 600;
-}
-.text-project h3 a{
-	color: #fff;
-}
-.text-project span{
-	font-size: 13px;
-	color: rgba(255,255,255,.8);
-}
-
-/*PRICING*/
-.pricing{
-	position: relative;
-	text-align: center;
-	border: 1px solid rgba(0,0,0,.05);
-	border: 1px solid #f1c638;
-	padding: 2em 1em;
-	/*rgba(0,0,0,.05;)*/
-}
-.pricing h3{
-	font-weight: 400;
-	margin-bottom: 10px;
-}
-.pricing h2{
-	font-size: 50px;
-	font-weight: 400;
-	margin-bottom: 0;
-	margin-top: 0;
-	line-height: 1.4;
-}
-.pricing .start{
-	padding: 0;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-.pricing h2 span{
-}
-.pricing h2 small{
-	font-size: 18px;
-}
-.pricing ul{
-	padding: 0;
-	margin: 20px 0 0 0;
-}
-.pricing ul li{
-	list-style: none;
-	margin-bottom: 10px;
-}
-
-/*BLOG*/
-.text-services .meta{
-	text-transform: uppercase;
-	font-size: 14px;
+.product-entry .text p{
 	margin-top: 0;
 }
-.text-services h3{
-	margin-top: 0;
-	line-height: 1.2;
-	font-size: 20px;
-}
-
-/*TESTIMONY*/
-.text-testimony .name{
-	margin: 0;
-}
-.text-testimony .position{
-	color: rgba(0,0,0,.3);
-
-}
-
-
-/*VIDEO*/
-.img{
-	width: 100%;
-	height: auto;
-	position: relative;
-}
-.img .icon{
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin-top: -25px;
-}
-.img .icon a{
-	display: block;
-	width: 60px;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin-left: -25px;
-}
-
-
-
-/*COUNTER*/
-.counter{
-	width: 100%;
-	position: relative;
-	z-index: 0;
-}
-.counter .overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: '';
-	width: 100%;
-	background: #000000;
-	z-index: -1;
-	opacity: .3;
-}
-.counter-text{
-	text-align: center;
-}
-.counter-text .num{
-	display: block;
+.product-entry .text span{
 	color: #000;
-	font-size: 34px;
-	font-weight: 400;
-}
-.counter-text .name{
-	display: block;
-	color: rgba(0,0,0,.9);
 	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	margin-bottom: 10px;
 }
-
-
+.product-entry img, .product-entry .text{
+	float: left;
+}
 
 ul.social{
-	padding: 20px 0 0 0;
+	padding: 0;
 }
 ul.social li{
 	display: inline-block;
 	margin-right: 10px;
 }
+
 /*FOOTER*/
 
 .footer{
-	color: rgba(255,255,255,.5);
-
+	color: rgba(0,0,0,.5);
 }
 .footer .heading{
-	color: #ffffff;
+	color: #000;
 	font-size: 20px;
 }
 .footer ul{
@@ -511,21 +284,12 @@ ul.social li{
 	margin-bottom: 10px;
 }
 .footer ul li a{
-	color: rgba(255,255,255,1);
+	color: rgba(0,0,0,1);
 }
 
 
 @media screen and (max-width: 500px) {
 
-	.icon{
-		text-align: left;
-	}
-
-	.text-services{
-		padding-left: 0;
-		padding-right: 20px;
-		text-align: left;
-	}
 
 }
 
@@ -535,8 +299,8 @@ ul.social li{
 
 </head>
 
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
-	<center style="width: 100%; background-color: #f1f1f1;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
+	<center style="width: 100%; background-color: #ffffff;">
     <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
       &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
     </div>
@@ -544,404 +308,153 @@ ul.social li{
     	<!-- BEGIN BODY -->
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
       	<tr>
-          <td valign="top" class="bg_white" style="padding: 1em 2.5em;">
+          <td valign="top" class="bg_white" style="padding: 1em 2.5em 0 2.5em;">
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
-          			<td width="40%" class="logo" style="text-align: left;">
-			            <h1><a href="#">Business</a></h1>
-			          </td>
-			          <td width="60%" class="logo" style="text-align: right;">
-			            <ul class="navigation">
-			            	<li><a href="#">Home</a></li>
-			            	<li><a href="#">About</a></li>
-			            	<li><a href="#">Works</a></li>
-			            	<li><a href="#">Blog</a></li>
-			            	<li><a href="#">Contact</a></li>
-			            </ul>
+          			<td class="logo" style="text-align: left;">
+			            <h1><a href="#">Eastbay Limo Service</a></h1>
 			          </td>
           		</tr>
           	</table>
           </td>
 	      </tr><!-- end tr -->
-				<tr>
-          <td valign="middle" class="hero bg_white">
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	      <tr>
+          <td valign="middle" class="hero bg_white" style="background-image: url(images/bg_1.jpg); background-size: cover; height: 400px;">
+          	<div class="overlay"></div>
+            <table>
             	<tr>
-            		<td valign="middle" width="50%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td>
-                        <img src="images/bg_1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="middle" width="50%" class="primary">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td class="text" style="text-align: left; padding: 20px 30px;">
-				              	<h2>We're Email Template Builder</h2>
-				              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-				              	<p><a href="#" class="btn btn-black">Shop now</a></p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
+            		<td>
+            			<div class="text" style="padding: 0 3em; text-align: center;">
+            			</div>
+            		</td>
+            	</tr>
+            </table>
+          </td>
+	      </tr><!-- end tr -->
+				<tr>
+          <td valign="middle" class="hero bg_white" style="padding: 2em 0 2em 0;">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            	<tr>
+            		<td style="padding: 0 2.5em; text-align: left;">
+            			<div class="text">
+            				<h2>Exclusives Offers For Selected Product Items</h2>
+            				<h3>Amazing deals, updates, interesting news right in your inbox</h3>
+            			</div>
+            		</td>
             	</tr>
             </table>
           </td>
 	      </tr><!-- end tr -->
 	      <tr>
-		      <td class="bg_white">
-		        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-		          <tr>
-		            <td class="bg_white email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Our Services</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="50%" style="padding-top: 20px;" class="services">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="icon">
-                              <img src="images/001-diet.png" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services">
-                            	<h3>Web Design</h3>
-                             	<p>Far far away, behind the word mountains, far from the countries</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="50%" style="padding-top: 20px;" class="services">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="icon">
-                              <img src="images/003-recipe-book.png" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services">
-                            	<h3>Web Development</h3>
-                              <p>Far far away, behind the word mountains, far from the countries</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="primary email-section" style="width: 100%;">
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-		            			<td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/about.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="text-services" style="text-align: left; padding-left:25px;">
-                            	<div class="heading-section">
-								              	<h2>Business Strategy</h2>
-								              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-								              	<p><a href="#" class="btn btn-primary">Read more</a></p>
-								            	</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="bg_white email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Projects</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td width="50%">
-                        <div class="project-entry">
-                        	<img src="images/work-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                        	<div class="text-project" style="text-align: center;">
-                          	<h3><a href="#">Office Room</a></h3>
-                          	<span>Printing</span>
-                          </div>
-                        </div>
-                      </td>
-                      <td width="50%">
-                        <div class="project-entry">
-                        	<img src="images/work-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                        	<div class="text-project" style="text-align: center;">
-                          	<h3><a href="#">Workplace</a></h3>
-                          	<span>Design</span>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-		            	</table>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td width="50%">
-                        <div class="project-entry">
-                        	<img src="images/work-3.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                        	<div class="text-project" style="text-align: center;">
-                          	<h3><a href="#">Modern Design</a></h3>
-                          	<span>Branding</span>
-                          </div>
-                        </div>
-                      </td>
-                      <td width="50%">
-                        <div class="project-entry">
-                        	<img src="images/work-4.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                        	<div class="text-project" style="text-align: center;">
-                          	<h3><a href="#">Work Hour</a></h3>
-                          	<span>Logo</span>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-
-		          <tr>
-			          <td valign="middle" class="counter">
-			            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-			            	<tr>
-			            		<td valign="middle" width="33.333%" style="padding: 3em 0; background-color: rgba(241,198,56,.9);">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                            	<span class="num">20</span>
-                            	<span class="name">Clients</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="33.333%" style="padding: 3em 0; background-color: rgba(241,198,56,1);">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                            	<span class="num">1200</span>
-                            	<span class="name">Projects</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="33.333%" style="padding: 3em 0; background-color: rgba(241,198,56,.8);">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                            	<span class="num">100</span>
-                            	<span class="name">Coffee Cups</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-			            	</tr>
-			            </table>
-			          </td>
-				      </tr><!-- end tr -->
-				      <tr>
-		            <td class="bg_white email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Our Blog</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/blog-1.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services" style="text-align: left;">
-                            	<h3>Business Key to Success</h3>
-                            	<p class="meta"><span>Posted on Feb 18, 2019</span> <span>Food</span></p>
-                             	<p>Far far away, behind the word mountains, far from the countries</p>
-                             	<p><a href="#" class="btn btn-primary">Read more</a></p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="10" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/blog-2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services" style="text-align: left;">
-                            	<h3>Web Design Technique</h3>
-                            	<p class="meta"><span>Posted on Feb 18, 2019</span> <span>Food</span></p>
-                              <p>Far far away, behind the word mountains, far from the countries</p>
-                              <p><a href="#" class="btn btn-primary">Read more</a></p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="bg_light email-section">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Our Team</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/person_1.jpg" alt="" style="width: 100px; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block; border-radius: 50%;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-testimony" style="text-align: center;">
-                            	<h3 class="name">Ronald Tuff</h3>
-                            	<span class="position">Businessman</span>
-                             	<p>Far far away, behind the word mountains</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/person_2.jpg" alt="" style="width: 100px; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block; border-radius: 50%;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-testimony" style="text-align: center;">
-                            	<h3 class="name">Willam Clarson</h3>
-                            	<span class="position">Businessman</span>
-                              <p>Far far away, behind the word mountains</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            	<table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="top" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/person_3.jpg" alt="" style="width: 100px; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block; border-radius: 50%;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-testimony" style="text-align: center;">
-                            	<h3 class="name">Ryan Bean</h3>
-                            	<span class="position">Businessman</span>
-                             	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		          <tr>
-		            <td class="bg_white email-section" style="width: 100%;">
-		            	<div class="heading-section" style="text-align: center; padding: 0 30px;">
-		              	<h2>Pricing Table</h2>
-		              	<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-		            	</div>
-		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-		            		<tr>
-                      <td valign="middle" width="50%" style="padding-right: 7px;">
-                      	<div class="pricing">
-                      		<h3>Standard Plan</h3>
-                      		<span class="start">Starting at</span>
-                      		<h2>
-													<span><small>$</small>25<small>/mos</small></span>
-                      		</h2>
-													<ul>
-														<li>Single Domain</li>
-														<li>10 GB Disk Space</li>
-														<li>100GB Transfer</li>
-														<li>Free Dedicated IP</li>
-													</ul>
-													<p><a href="#" class="btn btn-primary">Purchase</a></p>
-                      	</div>
-                      </td>
-                      <td valign="middle" width="50%" style="padding-left: 7px;">
-                      	<div class="pricing">
-                      		<h3>Premium</h3>
-                      		<span class="start">Starting at</span>
-                      		<h2>
-													<span><small>$</small>25<small>/mos</small></span>
-                      		</h2>
-													<ul>
-														<li>Single Domain</li>
-														<li>10 GB Disk Space</li>
-														<li>100GB Transfer</li>
-														<li>Free Dedicated IP</li>
-													</ul>
-													<p><a href="#" class="btn btn-primary">Purchase</a></p>
-                      	</div>
-                      </td>
-                    </tr>
-		            	</table>
-		            </td>
-		          </tr><!-- end: tr -->
-		        </table>
-
+	      	<td class="bg_white" style="padding: 0 0 4em 0;">
+		      	<table class="bg_white" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+						  <tr style="border-bottom: 1px solid rgba(0,0,0,.05);">
+						  	<td valign="middle" width="70%" style="text-align:left; padding: 0 2.5em;">
+						  		<div class="product-entry">
+						  			<img src="images/product-1.jpg" alt="" style="width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;">
+						  			<div class="text">
+						  				<h3>San Jose Airport</h3>
+						  				
+						  				<p>Curbside dropoff and pickup available</p>
+						  			</div>
+						  		</div>
+						  	</td>
+						  	<td valign="middle" width="30%" style="text-align:center; padding-right: 2.5em;">
+						  		<span class="price" style="color: #ffffff; font-size: 20px; display: block;">$120</span>
+						  		<span class="price" style="color: #0f0a0a; font-size: 20px; display: block;">$135 one way</span>
+						  		<span><a href="#" class="btn btn-primary">Shop now</a></span>
+						  	</td>
+						  </tr>
+						  <tr style="border-bottom: 1px solid rgba(0,0,0,.05);">
+						  	<td valign="middle" width="70%" style="text-align:left; padding: 0 2.5em;">
+						  		<div class="product-entry">
+						  			<img src="images/product-2.jpg" alt="" style="width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;">
+						  			<div class="text">
+						  				<h3>Oakland Airport</h3>
+						  				
+						  				<p>Curbside dropoff and pickup available</p>
+						  			</div>
+						  		</div>
+						  	</td>
+						  	<td valign="middle" width="30%" style="text-align:center; padding-right: 2.5em;">
+						  		<span class="price" style="color: #0f0a0a; font-size: 20px; display: block;">$100 one way</span>
+						  		
+						  		<span><a href="#" class="btn btn-primary">Shop now</a></span>
+						  	</td>
+						  </tr>
+						  <tr style="border-bottom: 1px solid rgba(0,0,0,.05);">
+						  	<td valign="middle" width="70%" style="text-align:left; padding: 0 2.5em;">
+						  		<div class="product-entry">
+						  			<img src="images/product-3.jpg" alt="" style="width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;">
+						  			<div class="text">
+						  				<h3>San Francisco Airport</h3>
+						  			
+						  				<p>Reserve two trips, Get third half off. Curbside dropoff and pickup available</p>
+						  			</div>
+						  		</div>
+						  	</td>
+						  	<td valign="middle" width="30%" style="text-align:center; padding-right: 2.5em;">
+						  		<span class="price" style="color: #030303; font-size: 20px; display: block;">$120 one way</span>
+						  		<span style="display: block;">50% Discount</span>
+						  		<span><a href="#" class="btn btn-primary">Shop now</a></span>
+						  	</td>
+						  </tr>
+		      	</table>
 		      </td>
-		    </tr><!-- end:tr -->
+	      </tr><!-- end tr -->
       <!-- 1 Column Text + Button : END -->
       </table>
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-        <tr>
-        	<td valign="middle" class="bg_black footer email-section">
-        		<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-        			<tr>
-        				<td width="100%" style="text-align: center;">
-        					<p style="font-size: 22px; margin-top: 0;">203 Fake St. Mountain View, San Francisco, California, USA</p>
-        				</td>
-        			</tr>
-        			<tr>
-        				<td width="100%" style="text-align: center;">
-        					<p style="margin-top: 0;">No longer want to receive these email? You can <a href="#">Unsubscribe here</a></p>
-        				</td>
-        			</tr>
-        			<tr>
-        				<td width="100%" style="text-align: center;">
-        					<ul class="social">
-                		<li><img src="images/004-twitter-logo.png" alt="" style="width: 24px; max-width: 600px; height: auto; display: block;"></li>
-                		<li><img src="images/005-facebook.png" alt="" style="width: 24px; max-width: 600px; height: auto; display: block;"></li>
-                		<li><img src="images/006-instagram-logo.png" alt="" style="width: 24px; max-width: 600px; height: auto; display: block;"></li>
-                	</ul>
-        				</td>
-        			</tr>
+      	<tr>
+          <td valign="middle" class="bg_light footer email-section">
+            <table>
+            	<tr>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-right: 10px;">
+                      	<h3 class="heading">About</h3>
+                      	<p>East bay limo providing the best airport service in the bay area.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
+                      	<h3 class="heading">Contact Info</h3>
+                      	<ul>
+					                <li><span class="text">203, San Francisco, California, USA</span></li>
+					                <li><span class="text">510-417-0774</span></a></li>
+					              </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-left: 10px;">
+                      	<h3 class="heading">Useful Links</h3>
+                      	<ul>
+					                <li><a href="#">Home</a></li>
+					                <li><a href="#">Account</a></li>
+					                <li><a href="#">Reserve Date</a></li>
+					                
+					              </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
             </table>
-        	</td>
+          </td>
+        </tr><!-- end: tr -->
+        <tr>
+          <td class="bg_white" style="text-align: center;">
+          	<p>If you no longer want to receive these email? You can <a href="#" style="color: rgba(0,0,0,.8);">Unsubscribe here</a></p>
+          </td>
         </tr>
       </table>
 
